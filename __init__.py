@@ -1,7 +1,19 @@
 
 import requests as requests
 
-_API_ENDPOINT = 'http://ec.europa.eu/taxation_customs/vies/checkVatService.wsdl'
+
+class vieRequest:
+    def __init__(self, country_code, vat_number):
+        self.country_code = country_code 
+        self.vat_number = vat_number 
+        self._API_ENDPOINT = 'http://ec.europa.eu/taxation_customs/vies/checkVatService.wsdl'
+        self.HEADERS = {"content-type" : "application/soap+xml"}
+    
+    def get_api_values(self):
+        pass
+        
+        
+
 
 headers = {"content-type" : "application/soap+xml"}
 body = """
