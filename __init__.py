@@ -13,6 +13,10 @@ class vieRequest:
         pass
         
         
+class subclass(vieRequest):
+    def __init__(self):
+        super().__init__()
+        
 
 
 headers = {"content-type" : "application/soap+xml"}
