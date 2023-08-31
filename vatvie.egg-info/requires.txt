@@ -1,3 +1,2 @@
 requests
-xml.etree.ElementTree
 re
