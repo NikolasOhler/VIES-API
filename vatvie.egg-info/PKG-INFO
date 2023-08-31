@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: vatvie
-Version: 0.8
+Version: 0.9
 Summary: A Python library for checking VAT numbers using the VIES SOAP API
 Home-page: https://github.com/OleynikovNikolay/vatvie
 Author: Nikolay Oleynikov
