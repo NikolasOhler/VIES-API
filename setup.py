@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='vatvie',
-    version='0.9',
+    version='1.0',
     description='A Python library for checking VAT numbers using the VIES SOAP API',
     long_description='The objective of this library is to allow companies involved in the intra-Community supply of goods or of services to obtain confirmation of the validity of the VAT identification number of any specified person, in accordance to article 31 of Council Regulation (EC) No. 904/2010 of 7 October 2010.',
     author='Nikolay Oleynikov',
