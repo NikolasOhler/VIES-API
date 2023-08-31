@@ -12,10 +12,13 @@ class XMLParserError(Exception):
     """
     Exception thrown when there is a problem associated with xml parser
     """
+    pass
+
 class HTTPError(Exception):
     """
     Exception thrown when there is a problem associated with http response
     """
+    pass
 
 class VatRequest:
     _API_ENDPOINT = 'http://ec.europa.eu/taxation_customs/vies/services/checkVatTestService.wsdl'
