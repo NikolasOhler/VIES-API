@@ -1,3 +1,39 @@
-This library has only one class which requires two attributes, countryCode (ISO-2) and VAT number to be checked. 
-As response you get dict like object with {countryCode, vatNumber, requestDate, valid, name, address}. All of the items in dict have string format.
+# Installation
+`$ pip3 install vatvie` 
 
+# Usage 
+```python
+import vatvie
+
+# intialising vatvie class
+vo = VatRequest('AT', '123212')
+# sending soap request to VIEs library
+response = vo.send_soap_request()
+
+# Country Code
+country_code = response['countryCode']
+
+# VAT Number
+vat_number = response['vatNumber']
+
+# Request Date
+request_date = response['requestDate']
+
+# Validation Status - 'true' / 'false'
+validation_status = response['valid']
+
+# Company Name
+company_name = response['name']
+
+# Company Address
+company_address = response['address']
+```
+
+# Error Validation 
+VAT number and country name should follow predefined **regex patterns**:
+- VAT Number = `'^[0-9A-Za-z\+\*\.]{2,12}$'`
+- Country name = `'^[A-Z]{2}$'`
+
+
+# License 
+MIT License 
