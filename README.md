@@ -3,7 +3,7 @@
 
 # Usage 
 ```python
-import vatvie
+from vatvie import VatRequest
 
 # intialising vatvie class
 vo = VatRequest('AT', '123212')
